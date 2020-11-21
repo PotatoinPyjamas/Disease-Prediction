@@ -18,23 +18,26 @@ def predict():
     '''
     For rendering results on HTML GUI
     '''
+    if request.method=='POST':
+        col=x_test.columns
+        i1 = request.form['Symptom1']
+        i2 = request.form['Symptom2']
+        i3 = request.form['Symptom3']
+        print(i1, i2, i3)
+        inputt = [i1, i2, i3]
 
-    col=x_test.columns
-    inputt=[]
-    for x in request.form.values():
-        inputt.append(x)
-
-    b=[0]*132
-    for x in range(0,132):
-        for y in inputt:
-            if(col[x]==y):
-                b[x]=1
-    b=np.array(b)
-    b=b.reshape(1,132)
-    prediction = model.predict(b)
-
-    return render_template('index.html', prediction_text='The disease is {}')
-
+        b=[0]*132
+        for x in range(0,132):
+            for y in inputt:
+                if(col[x]==y):
+                    b[x]=1
+        b=np.array(b)
+        b=b.reshape(1,132)
+        prediction = model.predict(b)
+        prediction=prediction[0]
+        print(type(prediction))
+        print(prediction)
+    return render_template('index.html',prediction=prediction)
 
 if __name__ == "__main__":
     app.run(debug=True)
