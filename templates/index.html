@@ -40,22 +40,22 @@
     <form action='/predict' method="post" class="col s12">
       <div class="row">
         <div class="input-field col s4">
-            <label for="first_name"><b></b></label>
+            <label for="first_name"><b>Symptom-1</b></label>
             <br>
-          <input id="s1" name="Symptom1" placeholder="Symptom 1"  type="text" class="validate">
+          <input id="s1" name="Symptom1" placeholder="Fever"  type="text" class="validate">
         </div>
         <div class="input-field col s4">
 
-          <label for="last_name"><b> </b></label>
+          <label for="last_name"><b> Symptom-2</b></label>
             <br>
-          <input id="s2" name="Symptom2" placeholder="Symptom 2"  type="text" class="validate">
+          <input id="s2" name="Symptom2" placeholder="Itching"  type="text" class="validate">
 
         </div>
 
         <div class="input-field col s4">
-            <label for="_name"><b></b></label>
+            <label for="_name"><b>Symptom-3</b></label>
             <br>
-          <input id="s3" name="Symptom3" placeholder="Symptom 3" type="text" class="validate">
+          <input id="s3" name="Symptom3" placeholder="Dizziness" type="text" class="validate">
 
         </div>
 
@@ -69,7 +69,8 @@
       </div>
 
       <br>
-        {{predicton}}<br>
+        {{pred}}
+      <br>
 
     </div>
   </div>
