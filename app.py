@@ -30,7 +30,7 @@ def predict():
         b=b.reshape(1,132)
         prediction = model.predict(b)
         prediction=prediction[0]
-    return render_template('index.html', pred="The probable daignosis says it could be {}".format(prediction))
+    return render_template('index.html', pred="The probable diagnosis says it could be {}".format(prediction))
 
 
 if __name__ == "__main__":
