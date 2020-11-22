@@ -1,4 +1,4 @@
-# Disease-Prediction
+# Disease Prediction
 Gives the probable diagnosis after entering the symptoms
 
 ## Model
