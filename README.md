@@ -37,3 +37,6 @@ The model has an accuracy of **97.62%**
 > ![wp entered](https://user-images.githubusercontent.com/68746915/99891453-cc08b400-2c8f-11eb-8f2f-1ef1513aa681.png)
 
 > ![wb diag](https://user-images.githubusercontent.com/68746915/99891551-20f8fa00-2c91-11eb-9a68-eb18800563d3.png)
+
+### Try it yourself!
+https://disease-prediction-pip.herokuapp.com/
